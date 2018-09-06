@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="bootstrap.min.js"></script>
+		<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript">
+			$(document).ready(function(){
+			  $("#login1").click(function(){
+				$("#mainContent").load("login.html", function() {
+					$(this).hide().slideDown();
+				});
+			  });
+			   $("#addCourse").click(function(){
+				$("#mainContent").load("addCourse.html", function() {
+					$(this).hide().slideDown();
+				});
+			  });
+			   $("#sumGrade").click(function(){
+				$("#mainContent").load("courseGradeSta.html", function() {
+					$(this).hide().slideDown();
+				});
+			  });
+	});
+		</script>
+	</head>
+
+	<body>
+		<div class="section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="section">
+							<div class="container">
+								<div class="row">
+									<div class="col-md-12 bg-secondary" style="background: url(&quot;bg.png&quot;) no-repeat deepskyblue; height: 110px;"></div>
+									<div class="row" style="background: deepskyblue">
+										<div class="col-md-12 bg-secondary">
+											<ul class="nav nav-tabs">
+												<li class="nav-item">
+													<div class="btn-group">
+														<button class="btn " data-toggle="dropdown" style="background: deepskyblue;color: white;font-size: 20px;">教学管理 </button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#" id="viewCourse">课程浏览</a>
+															<div class="dropdown-divider"></div>
+															<a class="dropdown-item" id="addCourse">课程添加</a>
+															<hr />
+															<a class="dropdown-item" href="#">教师浏览</a>
+															<div class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">教师添加</a>
+															<hr />
+															<a class="dropdown-item" href="#">班级信息</a>
+															<div class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">添加班级</a>
+															<hr />
+															<a class="dropdown-item" href="#">学生信息</a>
+															<div class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">添加学生</a>
+														</div>
+													</div>
+												</li>
+												<li class="nav-item">
+													<div class="btn-group">
+														<button class=" btn  dropdown-toggle" data-toggle="dropdown" style="background: deepskyblue;color: white;font-size: 20px"> 考试管理 </button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="#">题库管理</a>
+															<div class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">在线考试</a>
+														</div>
+													</div>
+												</li>
+												<li class="nav-item">
+													<div class="btn-group">
+														<button class=" btn dropdown-toggle" data-toggle="dropdown" style="background: deepskyblue;color: white;font-size: 20px"> 成绩统计 </button>
+														<div class="dropdown-menu">
+															<a class="dropdown-item " id="sumGrade">成绩汇总</a>
+															<div class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">成绩核算</a>
+															<div class="dropdown-divider"></div>
+															<a class="dropdown-item" href="#">成绩分析</a>
+														</div>
+													</div>
+												</li>
+												<li class="nav-item">
+													<button class="btn" id="login1" style="background: deepskyblue;">登录 </button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="row" id="mainContent">
+									<img src="bg.jpg" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12"> </div>
+				</div>
+			</div>
+		</div>
+		<footer class="section section-primary">
+			<div class="container" style="background: deepskyblue;">
+				<div class="row text-center">
+					<div class="col-sm-12">
+						<h1>QDU Educaiton Managerment System</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisici elit,
+							<br>sed eiusmod tempor incidunt ut labore et dolore magna aliqua.
+							<br>Ut enim ad minim veniam, quis nostrud</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</body>
+
+</html>
